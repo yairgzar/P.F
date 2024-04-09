@@ -81,13 +81,13 @@ const formTitle = computed(() => {
 <template>
     <v-row>
         <v-col cols="12" lg="4" md="6">
-            <v-text-field density="compact" v-model="search" label="Search Contacts" hide-details variant="outlined"></v-text-field>
+            <v-text-field density="compact" v-model="search" label="Buscar miembros" hide-details variant="outlined"></v-text-field>
         </v-col>
         <v-col cols="12" lg="8" md="6" class="text-right">
             <v-dialog v-model="dialog" max-width="500">
                 <template v-slot:activator="{ props }">
                     <v-btn color="primary" v-bind="props" flat class="ml-auto">
-                        <v-icon class="mr-2">mdi-account-multiple-plus</v-icon>Add Contact
+                        <v-icon class="mr-2">mdi-account-multiple-plus</v-icon>Agregar miembro
                     </v-btn>
                 </template>
                 <v-card>
@@ -170,11 +170,11 @@ const formTitle = computed(() => {
         <thead>
             <tr>
                 <th class="text-subtitle-1 font-weight-semibold">Id</th>
-                <th class="text-subtitle-1 font-weight-semibold">UserInfo</th>
-                <th class="text-subtitle-1 font-weight-semibold">Phone</th>
-                <th class="text-subtitle-1 font-weight-semibold">Joining Date</th>
-                <th class="text-subtitle-1 font-weight-semibold">Role</th>
-                <th class="text-subtitle-1 font-weight-semibold">Actions</th>
+                <th class="text-subtitle-1 font-weight-semibold">Miembro</th>
+                <th class="text-subtitle-1 font-weight-semibold">Telefono</th>
+                <th class="text-subtitle-1 font-weight-semibold">Fecha</th>
+                <th class="text-subtitle-1 font-weight-semibold">Rol</th>
+                <th class="text-subtitle-1 font-weight-semibold">Acciones</th>
             </tr>
         </thead>
         <tbody>
