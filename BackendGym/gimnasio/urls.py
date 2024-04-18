@@ -21,6 +21,6 @@ from rest_framework.documentation import include_docs_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    path('gimnasio/', include('api.urls')),
+    path('gimnasio/', include('myapi.urls')),
     path('docs/', include_docs_urls(title="gimnasio API'S")),
 ]
