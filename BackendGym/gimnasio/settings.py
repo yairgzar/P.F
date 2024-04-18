@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-    'api',
+    'myapi',
     'rest_framework',
     'corsheaders',
     'coreapi',
@@ -101,7 +101,7 @@ DATABASES = {
         'HOST': 'localhost',
         'USER': 'root',
         'PASSWORD': '1234',
-        'PORT': '3306',
+        'PORT': '3307',
         'NAME': 'gimnasio',
     }
 }
