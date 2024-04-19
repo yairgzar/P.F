@@ -38,6 +38,7 @@ INGENIERIA EN DESARROLLO Y GESTIÓN DE SOFTWARE
 El objetivo principal de este documento es desarrollar propuestas significativas y prácticas para el sitio web de un gimnasio, transformándolo en una herramienta
 integral que mejore la experiencia del usuario y fortalezca la conexión entre la entidad y sus miembros.
 
+
 #OBJETIVOS ESPECIFICOS
 1.- Mejora de la Experiencia del Usuario (UX): Diseñar una interfaz web intuitiva
 y atractiva que facilite la navegación para usuarios de todos los niveles.
@@ -50,5 +51,6 @@ metas personales, registrar sus actividades y recibir recomendaciones
 personalizadas.
 5.- Integrar sistemas de seguimiento de progreso que visualicen estadísticas y
 logros individuales, proporcionando a los usuarios un sentido de logro y motivación.
+
 
 </div>
