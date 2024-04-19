@@ -39,7 +39,7 @@ El objetivo principal de este documento es desarrollar propuestas significativas
 integral que mejore la experiencia del usuario y fortalezca la conexión entre la entidad y sus miembros.
 
 
-#OBJETIVOS ESPECIFICOS
+# OBJETIVOS ESPECIFICOS
 1.- Mejora de la Experiencia del Usuario (UX): Diseñar una interfaz web intuitiva
 y atractiva que facilite la navegación para usuarios de todos los niveles.
 2.- Implementar una estructura de contenido clara y coherente que proporcione
