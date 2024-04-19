@@ -71,9 +71,25 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="payment">Método de pago:</label>
-            <input type="text" id="payment" v-model="metodoPago" required>
+            <label for="membresia">Nivel:</label>
+            <select id="membresia" v-model="tipoMembresia" required>
+              <option value="Basica">Anual</option>
+              <option value="Estandar">Nuevo</option>
+              <option value="Premium">Plata</option>
+              <option value="Premium">Oro</option>
+              <option value="Premium">Diamente</option>
+            </select>
           </div>
+         
+          <div class="form-group">
+            <label for="membresia">Metodo de pago:</label>
+            <select id="membresia" v-model="tipoMembresia" required>
+              <option value="Basica">Debito</option>
+              <option value="Estandar">Credito</option>
+              <option value="Premium">Afectivo</option>
+            </select>
+          </div>
+         
           <button type="submit" class="submit-button">Comprar</button>
           <button type="button" @click="mostrarFormulario = false">Volver</button>
         </form>
