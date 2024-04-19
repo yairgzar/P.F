@@ -40,11 +40,11 @@ integral que mejore la experiencia del usuario y fortalezca la conexión entre l
 
 
 # OBJETIVOS ESPECIFICOS
-1.Mejora de la Experiencia del Usuario (UX): Diseñar una interfaz web intuitivay atractiva que facilite la navegación para usuarios de todos los niveles.
-2.Implementar una estructura de contenido clara y coherente que proporcioneinformación relevante de manera accesible.
-3.Optimizar los tiempos de carga y la responsividad del sitio para garantizaruna experiencia fluida en diferentes dispositivos.
-4.Implementar perfiles de usuario que permitan a cada miembro establecermetas personales, registrar sus actividades y recibir recomendacionespersonalizadas.
-5.Integrar sistemas de seguimiento de progreso que visualicen estadísticas ylogros individuales, proporcionando a los usuarios un sentido de logro y motivación.
+1. Mejora de la Experiencia del Usuario (UX): Diseñar una interfaz web intuitiva y atractiva que facilite la navegación para usuarios de todos los niveles.
+2. Implementar una estructura de contenido clara y coherente que proporcione información relevante de manera accesible.
+3. Optimizar los tiempos de carga y la responsividad del sitio para garantizar una experiencia fluida en diferentes dispositivos.
+4. Implementar perfiles de usuario que permitan a cada miembro establecer metas personales, registrar sus actividades y recibir recomendaciones personalizadas.
+5. Integrar sistemas de seguimiento de progreso que visualicen estadísticas y logros individuales, proporcionando a los usuarios un sentido de logro y motivación.
 
 # REQUERIMIENTOS FUNCIONALES
 1.- Selección de Membresía: Brindar diferentes opciones de membresía (individual,familiar, ) con sus respectivas características y precios.
