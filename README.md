@@ -33,6 +33,7 @@ INGENIERIA EN DESARROLLO Y GESTIÓN DE SOFTWARE
 <p align="center">
   <img src="https://github.com/Hugosago/P.F/blob/yair/Documentacion/Organigrama.png" alt="Organigrama">
 </p>
+</div>
 
 # OBJETIVO GENERAL
 El objetivo principal de este documento es desarrollar propuestas significativas y prácticas para el sitio web de un gimnasio, transformándolo en una herramienta
@@ -75,4 +76,3 @@ miembros, como foros, secciones de comentarios y encuestas.
 10.- Ayuda y documentación: El sistema debe proporcionar ayuda y documentación completas para que los usuarios puedan aprender a utilizarlo eficazmente
 
 # REGLAS DE NEGOCIO
-</div>
