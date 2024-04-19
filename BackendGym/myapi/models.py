@@ -12,6 +12,8 @@ class tbl_cliente(models.Model):
 	#website = models.URLField(max_length=100)
 	#foundation = models.PositiveIntegerField()
     #TextField(blanck=True)
+
+    
 	def _str_(self):
 		return self.d_nombre
 	
@@ -57,19 +59,21 @@ class tb_membresias(models.Model):
     fecha_registro = models.DateTimeField(auto_now_add=True)
     fecha_actualizacion = models.DateTimeField(auto_now_add=True)
     
+    class Meta:
+      db_table = 'membresias'
 
 class tb_personas(models.Model):
-    titulo_cortecia = models.CharField(max_length=20)
+    titulo_cortecia = models.CharField(max_length=20, null=True)
     nombre = models.CharField(max_length=80)
     primer_apellido = models.CharField(max_length=80)
     segundo_apellido = models.CharField(max_length=80)
     fecha_nacimiento = models.DateTimeField(auto_now=True)
-    fotografia = models.CharField(max_length=100)
+    fotografia = models.CharField(max_length=100, null=True)
     genero = models.CharField(max_length=20, choices=(
         ("Masculino", "M"),
         ("Femenino", "F"),
         ("No Binario", "N/B"),
-    ), default="Masculino")
+    ), default="Masculino", null=True)
     tipo_sangre = models.CharField(max_length=10, choices=(
         ("A+", "A+"),
         ("A-", "A-"),
@@ -82,16 +86,26 @@ class tb_personas(models.Model):
     ), default="A+")
     estatus = models.BooleanField(default=True)
     fecha_registro = models.DateTimeField(auto_now=True)
-    fecha_actualizacion = models.DateTimeField(auto_now=True)
+    fecha_actualizacion = models.DateTimeField(auto_now=True, null=True)
     class Meta:
         db_table = 'personas'
     
 
 class tb_miembros(models.Model):
-    personas_ID = models.ForeignKey(tb_personas, on_delete=models.CASCADE) 
-    membresias_activa = models.BooleanField()
-    antiguedad = models.CharField(max_length=50)
+    Persona_ID = models.ForeignKey(tb_personas, on_delete=models.CASCADE, primary_key=True) 
+    Tipo = models.CharField(max_length=20, choices=(
+	('Frecuente','Frecuente'),
+    ('Ocasional', 'Ocasional'),
+    ('Nuevo', 'Nuevo'),
+    ('Esporádico', 'Esporádico'),
+    ('Una sola visita', 'Una sola visita')
+	))
+    Membresias_Activa = models.BooleanField()
+    Antiguedad = models.CharField(max_length=80)
     
+    class Meta:
+      db_table = 'miembros'
+
 class tb_usuarios(models.Model):
     Persona_ID = models.OneToOneField(tb_personas, on_delete=models.CASCADE, primary_key=True)
     Nombre_Usuario = models.IntegerField(unique=True)
@@ -100,8 +114,14 @@ class tb_usuarios(models.Model):
     Estatus_Conexion = models.CharField(max_length=10, choices=(('Online', 'Online'), ('Offline', 'Offline'), ('Banned', 'Banned')), null=True)
     Ultima_Conexion = models.DateTimeField(null=True)
     
+    class Meta:
+      db_table = 'usuarios'
+
 class tb_membresias_usuarios(models.Model):
     membresias_ID = models.ForeignKey(tb_membresias, on_delete=models.CASCADE) 
     usuarios_ID = models.ForeignKey(tb_usuarios, on_delete=models.CASCADE)
     fecha_Ultima_Visita = models.DateTimeField(auto_now_add=True)
     estatus = models.BooleanField()
+
+    class Meta:
+      db_table = 'membresias_usuarios'
