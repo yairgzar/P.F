@@ -1,2 +1,13 @@
+<p align="center">
+  <img src="https://github.com/Hugosago/P.F/blob/yair/Documentacion/Logo.jpg" alt="Imagen Logo">
+</p>
 <div align="center">
-![Imagen Logo](https://github.com/Hugosago/P.F/blob/yair/Documentacion/LogoUTXJ.png)
+
+## UNIVERSIDAD TECNOLÓGICA DE XICOTEPEC DE JUÁREZ, PUEBLA
+### PROYECTO INTEGRADOR MEMBRESIAS
+INGENIERIA EN DESARROLLO Y GESTIÓN DE SOFTWARE 
+
+"8° B"
+
+# "EQUIPO VAHUYA"
+</div>
