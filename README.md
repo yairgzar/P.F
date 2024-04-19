@@ -76,3 +76,31 @@ miembros, como foros, secciones de comentarios y encuestas.
 10. Ayuda y documentación: El sistema debe proporcionar ayuda y documentación completas para que los usuarios puedan aprender a utilizarlo eficazmente
 
 # REGLAS DE NEGOCIO
+1. Residencia: Los clientes deben presentar un justificante de domicilio para acceder a las
+afiliaciones locales.
+2. Evaluación médica: Los clientes deben completar una evaluación médica antes de iniciar su
+actividad física en el gimnasio.
+3. Pago por adelantado: Se requiere el pago del primer mes de afiliación en el momento de la
+inscripción.
+4. Contrato digital: Los clientes deben aceptar digitalmente los términos y condiciones del contrato
+de afiliación.
+5. Plazo de preaviso: Se requiere un plazo de preaviso de 30 días para cancelar la afiliación.
+6. Penalización por cancelación anticipada: Se aplicará una penalización por cancelación anticipada
+según lo establecido en el contrato.
+7. Pago de deudas pendientes: Los clientes deben saldar las deudas pendientes antes de cancelar la
+afiliación.
+8. Morosidad: Se aplicarán cargos por demora en el pago a los pagos vencidos según lo establecido
+en el contrato.
+9. Edad mínima: Los miembros de la familia deben tener al menos 12 años para acceder a un abono
+familiar.
+10. Vínculo Familiar: Para inscribir a los miembros de la familia se requiere documentación que
+demuestre el parentesco.
+
+
+<p align="center">
+  <img src="https://github.com/Hugosago/P.F/blob/yair/Documentacion/Mockups.jpg" alt="Mockups">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Hugosago/P.F/blob/yair/Documentacion/Mockups%202.jpg" alt="Mockups 2">
+</p>
