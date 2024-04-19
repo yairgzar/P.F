@@ -32,19 +32,42 @@
             Por favor, completa todos los campos correctamente.
           </div>
           <div class="form-group">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" v-model="nombre" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" v-model="email" required>
-          </div>
-          <div class="form-group">
             <label for="membresia">Tipo de membresía:</label>
             <select id="membresia" v-model="tipoMembresia" required>
               <option value="Basica">Membresía Básica</option>
               <option value="Estandar">Membresía Estándar</option>
               <option value="Premium">Membresía Premium</option>
+            </select>
+            
+          </div>
+          <div class="form-group">
+            <label for="membresia">Tipo de servicios:</label>
+            <select id="membresia" v-model="tipoMembresia" required>
+              <option value="Basica">Básicos</option>
+              <option value="Estandar">Completa</option>
+              <option value="Premium">Coaching</option>
+              <option value="Premium">Nutrilogo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="membresia">Tipo de plan:</label>
+            <select id="membresia" v-model="tipoMembresia" required>
+              <option value="Basica">Anual</option>
+              <option value="Estandar">Semestral</option>
+              <option value="Premium">Trimestral</option>
+              <option value="Premium">Mensual</option>
+              <option value="Premium">Semanal</option>
+              <option value="Premium">Diaria</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="membresia">Nivel:</label>
+            <select id="membresia" v-model="tipoMembresia" required>
+              <option value="Basica">Anual</option>
+              <option value="Estandar">Nuevo</option>
+              <option value="Premium">Plata</option>
+              <option value="Premium">Oro</option>
+              <option value="Premium">Diamente</option>
             </select>
           </div>
           <div class="form-group">
