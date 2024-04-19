@@ -96,6 +96,7 @@ familiar.
 10. Vínculo Familiar: Para inscribir a los miembros de la familia se requiere documentación que
 demuestre el parentesco.
 
+# MOCKUPS
 
 <p align="center">
   <img src="https://github.com/Hugosago/P.F/blob/yair/Documentacion/Mockups.jpg" alt="Mockups">
