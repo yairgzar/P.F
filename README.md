@@ -41,6 +41,15 @@ integral que mejore la experiencia del usuario y fortalezca la conexión entre l
 
 # OBJETIVOS ESPECIFICOS
 1. Mejora de la Experiencia del Usuario (UX): Diseñar una interfaz web intuitiva y atractiva que facilite la navegación para usuarios de todos los niveles.
+2. Implementar una estructura de contenido clara y coherente que proporcione
+información relevante de manera accesible.
+3. Optimizar los tiempos de carga y la responsividad del sitio para garantizar
+una experiencia fluida en diferentes dispositivos.
+4. Fomento de la Participación y la Comunidad
+5. Introducir funciones interactivas que promuevan la participación de los
+miembros, como foros, secciones de comentarios y encuestas.
+
+
 
 # REQUERIMIENTOS FUNCIONALES
 1.- Selección de Membresía: Brindar diferentes opciones de membresía (individual,familiar, ) con sus respectivas características y precios.
