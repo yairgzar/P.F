@@ -5,6 +5,22 @@ import { useContactStore } from '@/stores/apps/contact';
 import contact from '@/_mockApis/apps/contact';
 
 const store = useContactStore();
+let miembros = []
+
+
+
+fetch('http://127.0.0.1:8000/gimnasio/api/v1tb_miembros/').then(res => {
+    try{
+        res.json().then(datos => {
+            miembros = datos
+            console.log(miembros)
+        })
+    }catch(error){
+        console.error(error)
+    }
+}).catch(error => {
+    console.error(error)
+})
 
 onMounted(() => {
     store.fetchContacts();
@@ -75,7 +91,7 @@ function save() {
 
 //Computed Property
 const formTitle = computed(() => {
-    return editedIndex.value === -1 ? 'New Contact' : 'Edit Contact';
+    return editedIndex.value === -1 ? 'Nuevo miembro' : 'Edit Contact';
 });
 </script>
 <template>
@@ -168,47 +184,31 @@ const formTitle = computed(() => {
     </v-row>
     <v-table class="mt-5">
         <thead>
-            <tr>
-                <th class="text-subtitle-1 font-weight-semibold">Id</th>
-                <th class="text-subtitle-1 font-weight-semibold">Miembro</th>
-                <th class="text-subtitle-1 font-weight-semibold">Telefono</th>
-                <th class="text-subtitle-1 font-weight-semibold">Fecha</th>
-                <th class="text-subtitle-1 font-weight-semibold">Rol</th>
-                <th class="text-subtitle-1 font-weight-semibold">Acciones</th>
+            <tr >
+                <th class="text-subtitle-1 font-weight-semibold">ID</th>
+                <th class="text-subtitle-1 font-weight-semibold">Tipo</th>
+                <th class="text-subtitle-1 font-weight-semibold">Membresía activa</th>
+                <th class="text-subtitle-1 font-weight-semibold">Antigüedad</th>
             </tr>
         </thead>
         <tbody>
-            <tr v-for="item in filteredList" :key="item.id">
-                <td class="text-subtitle-1">{{ item.id }}</td>
-                <td>
-                    <div class="d-flex align-center py-4">
-                        <div>
-                            <v-img :src="item.avatar" width="45px" class="rounded-circle img-fluid"></v-img>
-                        </div>
-
-                        <div class="ml-5">
-                            <h4 class="text-h6">{{ item.userinfo }}</h4>
-                            <span class="text-subtitle-1 d-block mt-1 textSecondary">{{ item.usermail }}</span>
-                        </div>
-                    </div>
-                </td>
-                <td class="text-subtitle-1">{{ item.phone }}</td>
-                <td class="text-subtitle-1">{{ item.jdate }}</td>
-                <td>
-                    <v-chip :color="item.rolestatus" size="small" label>{{ item.role }}</v-chip>
-                </td>
+            <tr v-for="miembro in miembros" :key="miembro.Persona_ID">
+                <td class="text-subtitle-1">{{ miembro.Persona_ID }}</td>
+                <td class="text-subtitle-1">{{ miembro.Tipo }}</td>
+                <td class="text-subtitle-1">{{ miembro.Membresias_Activa }}</td>
+                <td class="text-subtitle-1">{{ miembro.Antiguedad }}</td>
                 <td>
                     <div class="d-flex align-center">
                         <v-tooltip text="Edit">
                             <template v-slot:activator="{ props }">
-                                <v-btn icon flat @click="editItem(item)" v-bind="props"
+                                <v-btn icon flat @click="editItem(miembro)" v-bind="props"
                                     ><PencilIcon stroke-width="1.5" size="20" class="text-primary"
                                 /></v-btn>
                             </template>
                         </v-tooltip>
                         <v-tooltip text="Delete">
                             <template v-slot:activator="{ props }">
-                                <v-btn icon flat @click="deleteItem(item)" v-bind="props"
+                                <v-btn icon flat @click="deleteItem(miembro)" v-bind="props"
                                     ><TrashIcon stroke-width="1.5" size="20" class="text-error"
                                 /></v-btn>
                             </template>
