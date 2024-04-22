@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "6626aa62e50bcb4aea39c6c0"
+  },
+  "id_asistencia": "1",
+  "id_miembro": "123456",
+  "nombre_miembro": "Yair Salazar",
+  "fecha_entrada": "2024-04-22T08:00:00",
+  "fecha_salida": "2024-04-22T09:30:00",
+  "duracion_sesion": 90,
+  "tipo_actividad": "Entrenamiento",
+  "id_instructor": "789",
+  "comentarios": "Buena sesión de entrenamiento"
+}]
