@@ -111,57 +111,6 @@ const chartOptions = computed(() => {
             }
         ]
     };
-    return {
-        chart: {
-            type: 'area',
-            height: 300,
-            fontFamily: `inherit`,
-            foreColor: '#adb0bb',
-            zoom: {
-                enabled: true
-            },
-            toolbar: {
-                show: false
-            }
-        },
-        colors: [getPrimary.value,getSecondary.value],
-        dataLabels: {
-            enabled: false
-        },
-        stroke: {
-            width: '3',
-            curve: 'smooth'
-        },
-        xaxis: {
-            type: 'datetime',
-            categories: [
-                '2018-09-19T00:00:00',
-                '2018-09-19T01:30:00',
-                '2018-09-19T02:30:00',
-                '2018-09-19T03:30:00',
-                '2018-09-19T04:30:00',
-                '2018-09-19T05:30:00',
-                '2018-09-19T06:30:00',
-            ]
-        },
-        yaxis: {
-            opposite: false,
-            labels: {
-                show: true
-            }
-        },
-        legend: {
-            show: true,
-            position: 'bottom',
-            width: '50px'
-        },
-        grid: {
-            show: false
-        },
-        tooltip: {
-            theme: 'dark',
-        }
-    };
 });
 
 const areaChart = {
